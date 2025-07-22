@@ -1,6 +1,6 @@
 # Master Thesis: Non-Negative Tensor Factorization for Travel Diaries
 
-This repository contains the implementation of a master thesis project focusing on analyzing Origin-Destination-Time (ODT) tensors using Non-Negative Tensor Factorization (NNTF) techniques. The project analyzes travel diary data from multiple Dutch cities to discover temporal and spatial patterns in urban mobility.
+This repository contains the implementation of a master thesis project focusing on analyzing Origin-Destination-Time (ODT) tensors using Non-Negative Tensor Factorization (NNTF) techniques. The project analyzes travel diary data from two Dutch cities to discover temporal and spatial patterns in urban mobility.
 
 > **Thesis PDF Available:**  
 > The full master thesis describing this project, methodology, and results is included in this repository as [Master_Thesis_Peter_Falterbaum.pdf](Master_Thesis_Peter_Falterbaum.pdf).  
@@ -32,7 +32,7 @@ This repository contains the implementation of a master thesis project focusing 
 
 ### Multi-City Analysis
 
-- **Cities Covered**: Utrecht, 's-Gravenhage (The Hague), Rotterdam
+- **Cities Covered**: Utrecht, Rotterdam
 - **Data Source**: ODiN (Onderzoek Verplaatsingen in Nederland) travel diary survey
 - **Temporal Resolution**: Both timebin (5 periods/day) and weekhour (24 hours/day) representations
 
@@ -52,13 +52,39 @@ This repository contains the implementation of a master thesis project focusing 
 
 ## Data Overview
 
-### City Statistics
+This project analyzes travel diary data for two Dutch cities: **Utrecht** and **Rotterdam**. The data is sourced from the ODiN (Onderzoek Onderweg in Nederland) survey, available at [https://doi.org/10.17026/SS/FNXJEU](https://doi.org/10.17026/SS/FNXJEU).
 
-| City          | Total Trips | Origins | Destinations | Timebin Tensor | Weekhour Tensor |
-| ------------- | ----------- | ------- | ------------ | -------------- | --------------- |
-| Utrecht       | 5,637       | 46      | 46           | 46×46×35       | 46×46×168       |
-| 's-Gravenhage | 6,371       | 62      | 62           | 62×62×35       | 62×62×168       |
-| Rotterdam     | 7,223       | 76      | 76           | 76×76×35       | 76×76×168       |
+We tested three different time binning approaches:
+
+1. **24-hour based**: Separate tensors for weekday and weekend (24 bins each).
+2. **Peak-hour bins**: 5 time bins per day, aggregated over 7 days (35 bins).
+3. **Week-hour aggregation**: Trips aggregated by hour of the week (168 bins).
+
+### Tensor Dimensionalities for Utrecht
+
+| Metric           | 24-Hour Weekday | 24-Hour Weekend | Peak Hour | Week Hour |
+|------------------|-----------------|-----------------|-----------|-----------|
+| Origin           | 45              | 44              | 45        | 45        |
+| Destination      | 45              | 44              | 45        | 45        |
+| Time             | 24              | 24              | 35        | 168       |
+| Possible Comb.   | 48,600          | 46,464          | 70,875    | 340,200   |
+| Density (%)      | 2.90            | 1.21            | 2.68      | 0.66      |
+| Avg. Trip Count  | 1.35            | 1.15            | 0.31      | 1.13      |
+| Median TC        | 1.00            | 1.00            | 0.29      | 1.00      |
+| Std. Dev. TC     | 0.73            | 0.45            | 0.21      | 0.44      |
+
+### Tensor Dimensionalities for Rotterdam
+
+| Metric           | 24-Hour Weekday | 24-Hour Weekend | Peak Hour | Week Hour |
+|------------------|-----------------|-----------------|-----------|-----------|
+| Origin           | 69              | 62              | 69        | 69        |
+| Destination      | 69              | 62              | 69        | 69        |
+| Time             | 24              | 24              | 35        | 168       |
+| Possible Comb.   | 114,264         | 92,256          | 166,635   | 799,848   |
+| Density (%)      | 1.38            | 0.70            | 1.32      | 0.32      |
+| Avg. Trip Count  | 1.60            | 1.36            | 0.38      | 1.35      |
+| Median TC        | 1.00            | 1.00            | 0.36      | 1.00      |
+| Std. Dev. TC     | 1.02            | 0.78            | 0.30      | 0.78      |
 
 ### Tensor Characteristics
 
@@ -118,23 +144,14 @@ This repository contains the implementation of a master thesis project focusing 
 
 ## Key Findings
 
-### Algorithm Performance
-
-- **MU vs HALS**: MU is 20-130x faster with similar quality results
-- **Factor Sparsity**: HALS produces sparser factors (36-55%) beneficial for pattern discovery
-- **Convergence**: Both methods achieve similar reconstruction quality
-
-### Rank Selection
-
-- **Higher Ranks**: Better explained variance (up to 59% at rank 20)
-- **Factor Sparsity**: Increases with rank, helping identify distinct patterns
-- **Trade-off**: Between reconstruction quality and interpretability
-
-### Temporal Patterns
-
-- **Weekday Factors**: Show 0% sparsity (all days contribute)
-- **Origin/Destination Factors**: Show 36%+ sparsity
-- **Time Resolution**: Both timebin and weekhour representations reveal different patterns
+- **NNTF (CP and Tucker decompositions)** enabled interpretable analysis of travel diary data for Utrecht and Rotterdam, revealing both common and city-specific mobility patterns.
+- **Preprocessing pipeline** emphasized data sparsity and meaningful trip flows, using robust time binning (weekday/weekend, peak-hour, week-hour) and exclusion of intra-zonal/low-frequency OD pairs to enhance latent structure.
+- **Rank selection** using explained variance (EV) and pattern entropy (PE) identified optimal CP ranks of 5–6 and Tucker dimension-specific ranks of 4–6, balancing accuracy and interpretability.
+- **Key mobility patterns:**
+  - Utrecht: City center evening peaks, suburban car commutes, shopping transit, and weekend leisure/shopping trips.
+  - Rotterdam: Student commuting to university (morning/evening peaks), senior suburban flows, and strong weekend shopping/homebound patterns.
+- **Practical value:** The extracted patterns provide actionable insights for urban and transport planning, e.g., highlighting the effectiveness of main transport routes to city centers and the need for improved suburban connectivity.
+- **Both CP and Tucker** showed high correlation in extracted patterns, validating the effectiveness of NNTF for spatio-temporal mobility analysis.
 
 ## Development Workflow
 
