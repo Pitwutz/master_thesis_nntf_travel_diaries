@@ -1,0 +1,73 @@
+{
+  "input_files": {
+    "decomposition": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/results/decompositions/tucker/hourly_analysis/odt_rotterdam_hourly_weekday/MU/run_20250610_123349/rank_5_5_3/odt_rotterdam_hourly_weekday_factors.npz",
+    "geojson": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/raw/location/working_zips.geojson",
+    "index_mappings": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/processed/rotterdam/odt_no_same_od_no_rare_od_fixed_thresh_normalizedPeaks/timehours/index_mappings_rotterdam_weekday_hourly.json"
+  },
+  "decomposition_info": {
+    "rank": 5,
+    "weights": [
+      16.67778205871582,
+      21.15705680847168,
+      19.783615112304688,
+      20.688440322875977,
+      13.817923545837402
+    ],
+    "origin_mode": {
+      "shape": [
+        69,
+        5
+      ],
+      "min": 0.0,
+      "max": 0.8681082725524902,
+      "mean": 0.041796449571847916,
+      "sparsity": 0.463768115942029
+    },
+    "destination_mode": {
+      "shape": [
+        69,
+        5
+      ],
+      "min": 0.0,
+      "max": 0.9231859445571899,
+      "mean": 0.04031161963939667,
+      "sparsity": 0.463768115942029
+    },
+    "temporal_mode": {
+      "shape": [
+        24,
+        3
+      ],
+      "min": 0.0,
+      "max": 0.9011008739471436,
+      "mean": 0.11213302612304688,
+      "sparsity": 0.125
+    }
+  },
+  "visualization_info": {
+    "spatial_plot": {
+      "colormap": "viridis",
+      "context_alpha": 0.3,
+      "context_color": "lightgray",
+      "context_edge_color": "gray",
+      "max_components_per_row": 3
+    },
+    "temporal_plot": {
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "line_style": "-o",
+      "grid_alpha": 0.3
+    }
+  },
+  "generation_info": {
+    "timestamp": "2025-06-17T10:23:30.567320",
+    "script_version": "1.0.0"
+  }
+}

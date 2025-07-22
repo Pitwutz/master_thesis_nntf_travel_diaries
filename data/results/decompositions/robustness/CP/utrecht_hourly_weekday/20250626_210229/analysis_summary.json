@@ -1,0 +1,12 @@
+{
+    "analysis_timestamp": "20250626_210229",
+    "tensor_path": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/processed/utrecht/odt_no_same_od_no_rare_od_fixed_thresh_normalizedPeaks/timehours/odt_processed_utrecht_hourly_weekday.npz",
+    "tensor_name": "odt_processed_utrecht_hourly_weekday",
+    "num_runs": 6,
+    "ranks": [
+        5
+    ],
+    "optimizer": "MU",
+    "analysis_dir": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/results/decompositions/robustness/CP/utrecht_hourly_weekday/20250626_210229",
+    "status": "completed"
+}

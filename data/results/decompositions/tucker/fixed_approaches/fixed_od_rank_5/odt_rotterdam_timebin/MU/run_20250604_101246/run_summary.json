@@ -1,0 +1,96 @@
+{
+    "system_info": {
+        "platform": "macOS-15.5-arm64-arm-64bit",
+        "python_version": "3.11.5",
+        "python_implementation": "CPython",
+        "cpu_count": 8,
+        "date_time": "2025-06-04 10:12:58",
+        "tensorly_version": "0.9.0",
+        "numpy_version": "1.23.5",
+        "torch_version": "2.6.0",
+        "cuda_available": false,
+        "cuda_version": null,
+        "gpu_name": null,
+        "gpu_count": 0
+    },
+    "tensor_info": {
+        "file": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/processed/rotterdam/odt_no_same_od_no_rare_od_fixed_thresh/timebin/odt_processed_rotterdam_timebin.npz",
+        "shape": [
+            69,
+            69,
+            35
+        ],
+        "non_zero_elements": 3,
+        "density": 1.8003420649923487e-05,
+        "min_value": 1.0,
+        "using_sparse": true
+    },
+    "decomposition_params": {
+        "ranks": {
+            "origin": [
+                5
+            ],
+            "destination": [
+                5
+            ],
+            "time": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        "max_iterations": 1000,
+        "tolerance": 1e-08,
+        "optimizer": "MU",
+        "device": "cpu",
+        "init_methods": "random,svd,nndsvd"
+    },
+    "results": {
+        "(5, 5, 2)": {
+            "normalized_frobenius_error": 0.9183882474899292,
+            "explained_variance": 0.15656304359436035,
+            "computation_time": 0.6893041133880615,
+            "best_initialization": "random"
+        },
+        "(5, 5, 3)": {
+            "normalized_frobenius_error": 0.9172512888908386,
+            "explained_variance": 0.15865010023117065,
+            "computation_time": 1.0374078750610352,
+            "best_initialization": "random"
+        },
+        "(5, 5, 4)": {
+            "normalized_frobenius_error": 0.9142542481422424,
+            "explained_variance": 0.16413915157318115,
+            "computation_time": 0.46344494819641113,
+            "best_initialization": "svd"
+        },
+        "(5, 5, 5)": {
+            "normalized_frobenius_error": 0.9112094044685364,
+            "explained_variance": 0.16969740390777588,
+            "computation_time": 0.6238100528717041,
+            "best_initialization": "random"
+        },
+        "(5, 5, 6)": {
+            "normalized_frobenius_error": 0.906843900680542,
+            "explained_variance": 0.1776341199874878,
+            "computation_time": 0.6036970615386963,
+            "best_initialization": "svd"
+        },
+        "(5, 5, 7)": {
+            "normalized_frobenius_error": 0.9046074748039246,
+            "explained_variance": 0.18168532848358154,
+            "computation_time": 1.2473478317260742,
+            "best_initialization": "svd"
+        },
+        "(5, 5, 8)": {
+            "normalized_frobenius_error": 0.9036480188369751,
+            "explained_variance": 0.18342024087905884,
+            "computation_time": 0.6536049842834473,
+            "best_initialization": "svd"
+        }
+    }
+}

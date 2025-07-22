@@ -1,0 +1,23 @@
+{
+    "tensor_name": "odt_rotterdam_timebin",
+    "ranks": [
+        3,
+        3,
+        2
+    ],
+    "ranks_mode": {
+        "origin": 3,
+        "destination": 3,
+        "time": 2
+    },
+    "optimizer": "MU",
+    "max_iter": 1000,
+    "tol": 1e-08,
+    "init_methods": "random,svd,nndsvd",
+    "normalize_factors": false,
+    "exact": false,
+    "algorithm": "fista",
+    "started_at": "2025-06-04 15:57:24",
+    "status": "completed",
+    "completed_at": "2025-06-04 15:57:25"
+}

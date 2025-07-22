@@ -1,0 +1,20 @@
+{
+  "tensor_name": "odt_processed_rotterdam_hourly_weekday",
+  "city": "Rotterdam",
+  "period": "weekday",
+  "source_file": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/processed/odt_no_same_od_no_rare_od_fixed_thresh.csv",
+  "statistics": {
+    "total_trips": 2528,
+    "mean_trips": 1.59898798228969,
+    "median_trips": 1.0,
+    "density": 0.01383637891199328,
+    "max_trips_per_hour": 12,
+    "min_trips_per_hour": 1,
+    "std_trips": 1.0224562077130375
+  },
+  "dimensions": {
+    "origins": 69,
+    "destinations": 69,
+    "hours": 24
+  }
+}

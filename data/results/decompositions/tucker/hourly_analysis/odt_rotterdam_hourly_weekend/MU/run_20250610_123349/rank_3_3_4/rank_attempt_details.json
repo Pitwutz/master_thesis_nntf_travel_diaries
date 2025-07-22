@@ -1,0 +1,23 @@
+{
+    "tensor_name": "odt_rotterdam_hourly_weekend",
+    "ranks": [
+        3,
+        3,
+        4
+    ],
+    "ranks_mode": {
+        "origin": 3,
+        "destination": 3,
+        "time": 4
+    },
+    "optimizer": "MU",
+    "max_iter": 1000,
+    "tol": 1e-08,
+    "init_methods": "random,svd,nndsvd",
+    "normalize_factors": true,
+    "exact": false,
+    "algorithm": "fista",
+    "started_at": "2025-06-16 07:32:37",
+    "status": "completed",
+    "completed_at": "2025-06-16 07:32:39"
+}

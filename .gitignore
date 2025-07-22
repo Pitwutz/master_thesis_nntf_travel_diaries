@@ -1,0 +1,33 @@
+# Data files
+data/raw/
+data/raw/*
+!data/raw/location/
+*.csv
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.dbju
+env.bak/
+venv.bak/
+
+# Python cache
+__pycache__/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp

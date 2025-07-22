@@ -1,0 +1,72 @@
+{
+  "input_files": {
+    "decomposition": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/results/decompositions/tucker/hourly_analysis/odt_utrecht_hourly_weekend/MU/run_20250610_123349/rank_4_5_5/odt_utrecht_hourly_weekend_factors.npz",
+    "geojson": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/raw/location/working_zips.geojson",
+    "index_mappings": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/processed/utrecht/odt_no_same_od_no_rare_od_fixed_thresh_normalizedPeaks/timehours/index_mappings_utrecht_weekend_hourly.json"
+  },
+  "decomposition_info": {
+    "rank": 4,
+    "weights": [
+      5.248281002044678,
+      15.306974411010742,
+      7.866592884063721,
+      12.779019355773926
+    ],
+    "origin_mode": {
+      "shape": [
+        44,
+        4
+      ],
+      "min": 0.0,
+      "max": 0.9631559252738953,
+      "mean": 0.0558236725628376,
+      "sparsity": 0.44886363636363635
+    },
+    "destination_mode": {
+      "shape": [
+        44,
+        5
+      ],
+      "min": 0.0,
+      "max": 0.9439937472343445,
+      "mean": 0.05148259922862053,
+      "sparsity": 0.4863636363636364
+    },
+    "temporal_mode": {
+      "shape": [
+        24,
+        5
+      ],
+      "min": 0.0,
+      "max": 0.9328874349594116,
+      "mean": 0.09730677306652069,
+      "sparsity": 0.38333333333333336
+    }
+  },
+  "visualization_info": {
+    "spatial_plot": {
+      "colormap": "viridis",
+      "context_alpha": 0.3,
+      "context_color": "lightgray",
+      "context_edge_color": "gray",
+      "max_components_per_row": 3
+    },
+    "temporal_plot": {
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "line_style": "-o",
+      "grid_alpha": 0.3
+    }
+  },
+  "generation_info": {
+    "timestamp": "2025-07-08T19:14:30.341817",
+    "script_version": "1.0.0"
+  }
+}

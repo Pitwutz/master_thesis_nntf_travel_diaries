@@ -1,0 +1,206 @@
+{
+    "system_info": {
+        "platform": "macOS-15.5-arm64-arm-64bit",
+        "python_version": "3.11.5",
+        "python_implementation": "CPython",
+        "cpu_count": 8,
+        "date_time": "2025-06-04 15:57:50",
+        "tensorly_version": "0.9.0",
+        "numpy_version": "1.23.5",
+        "torch_version": "2.6.0",
+        "cuda_available": false,
+        "cuda_version": null,
+        "gpu_name": null,
+        "gpu_count": 0
+    },
+    "tensor_info": {
+        "file": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/processed/rotterdam/odt_no_same_od_no_rare_od_fixed_thresh/timebin/odt_processed_rotterdam_timebin.npz",
+        "shape": [
+            69,
+            69,
+            35
+        ],
+        "non_zero_elements": 3,
+        "density": 1.8003420649923487e-05,
+        "min_value": 1.0,
+        "using_sparse": true
+    },
+    "decomposition_params": {
+        "ranks": {
+            "origin": [
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "destination": [
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "time": [
+                2
+            ]
+        },
+        "max_iterations": 1000,
+        "tolerance": 1e-08,
+        "optimizer": "MU",
+        "device": "cpu",
+        "init_methods": "random,svd,nndsvd"
+    },
+    "results": {
+        "(3, 3, 2)": {
+            "normalized_frobenius_error": 0.9375457763671875,
+            "explained_variance": 0.12100791931152344,
+            "computation_time": 0.1331169605255127,
+            "best_initialization": "random"
+        },
+        "(3, 4, 2)": {
+            "normalized_frobenius_error": 0.9368805885314941,
+            "explained_variance": 0.12225478887557983,
+            "computation_time": 0.2687389850616455,
+            "best_initialization": "random"
+        },
+        "(3, 5, 2)": {
+            "normalized_frobenius_error": 0.9348036050796509,
+            "explained_variance": 0.1261422038078308,
+            "computation_time": 0.5286710262298584,
+            "best_initialization": "random"
+        },
+        "(3, 6, 2)": {
+            "normalized_frobenius_error": 0.934501051902771,
+            "explained_variance": 0.1267077922821045,
+            "computation_time": 0.6440129280090332,
+            "best_initialization": "random"
+        },
+        "(3, 7, 2)": {
+            "normalized_frobenius_error": 0.935650110244751,
+            "explained_variance": 0.12455886602401733,
+            "computation_time": 0.5595788955688477,
+            "best_initialization": "random"
+        },
+        "(4, 3, 2)": {
+            "normalized_frobenius_error": 0.9334152936935425,
+            "explained_variance": 0.12873589992523193,
+            "computation_time": 0.3539419174194336,
+            "best_initialization": "random"
+        },
+        "(4, 4, 2)": {
+            "normalized_frobenius_error": 0.9267216324806213,
+            "explained_variance": 0.14118701219558716,
+            "computation_time": 0.264523983001709,
+            "best_initialization": "svd"
+        },
+        "(4, 5, 2)": {
+            "normalized_frobenius_error": 0.9260912537574768,
+            "explained_variance": 0.14235496520996094,
+            "computation_time": 0.6176891326904297,
+            "best_initialization": "random"
+        },
+        "(4, 6, 2)": {
+            "normalized_frobenius_error": 0.9253643751144409,
+            "explained_variance": 0.14370077848434448,
+            "computation_time": 0.8132052421569824,
+            "best_initialization": "svd"
+        },
+        "(4, 7, 2)": {
+            "normalized_frobenius_error": 0.9244852066040039,
+            "explained_variance": 0.14532709121704102,
+            "computation_time": 0.47571301460266113,
+            "best_initialization": "random"
+        },
+        "(5, 3, 2)": {
+            "normalized_frobenius_error": 0.9328256249427795,
+            "explained_variance": 0.12983638048171997,
+            "computation_time": 0.26288914680480957,
+            "best_initialization": "random"
+        },
+        "(5, 4, 2)": {
+            "normalized_frobenius_error": 0.9255657196044922,
+            "explained_variance": 0.14332807064056396,
+            "computation_time": 0.8817369937896729,
+            "best_initialization": "svd"
+        },
+        "(5, 5, 2)": {
+            "normalized_frobenius_error": 0.9216729998588562,
+            "explained_variance": 0.15051889419555664,
+            "computation_time": 0.7066643238067627,
+            "best_initialization": "random"
+        },
+        "(5, 6, 2)": {
+            "normalized_frobenius_error": 0.9208511710166931,
+            "explained_variance": 0.15203315019607544,
+            "computation_time": 0.6478569507598877,
+            "best_initialization": "random"
+        },
+        "(5, 7, 2)": {
+            "normalized_frobenius_error": 0.9162783622741699,
+            "explained_variance": 0.16043394804000854,
+            "computation_time": 0.4498720169067383,
+            "best_initialization": "random"
+        },
+        "(6, 3, 2)": {
+            "normalized_frobenius_error": 0.934555172920227,
+            "explained_variance": 0.12660664319992065,
+            "computation_time": 0.3470039367675781,
+            "best_initialization": "random"
+        },
+        "(6, 4, 2)": {
+            "normalized_frobenius_error": 0.9249545335769653,
+            "explained_variance": 0.14445912837982178,
+            "computation_time": 0.3942129611968994,
+            "best_initialization": "svd"
+        },
+        "(6, 5, 2)": {
+            "normalized_frobenius_error": 0.9162211418151855,
+            "explained_variance": 0.16053879261016846,
+            "computation_time": 0.3624589443206787,
+            "best_initialization": "random"
+        },
+        "(6, 6, 2)": {
+            "normalized_frobenius_error": 0.9200364351272583,
+            "explained_variance": 0.1535329818725586,
+            "computation_time": 0.3649110794067383,
+            "best_initialization": "random"
+        },
+        "(6, 7, 2)": {
+            "normalized_frobenius_error": 0.9156330227851868,
+            "explained_variance": 0.16161614656448364,
+            "computation_time": 0.5575170516967773,
+            "best_initialization": "random"
+        },
+        "(7, 3, 2)": {
+            "normalized_frobenius_error": 0.9299339652061462,
+            "explained_variance": 0.13522279262542725,
+            "computation_time": 0.35573792457580566,
+            "best_initialization": "random"
+        },
+        "(7, 4, 2)": {
+            "normalized_frobenius_error": 0.9226210117340088,
+            "explained_variance": 0.14877045154571533,
+            "computation_time": 0.3551509380340576,
+            "best_initialization": "random"
+        },
+        "(7, 5, 2)": {
+            "normalized_frobenius_error": 0.9160480499267578,
+            "explained_variance": 0.1608559489250183,
+            "computation_time": 0.5685560703277588,
+            "best_initialization": "random"
+        },
+        "(7, 6, 2)": {
+            "normalized_frobenius_error": 0.9122788310050964,
+            "explained_variance": 0.16774731874465942,
+            "computation_time": 0.3845088481903076,
+            "best_initialization": "random"
+        },
+        "(7, 7, 2)": {
+            "normalized_frobenius_error": 0.9085839986801147,
+            "explained_variance": 0.17447513341903687,
+            "computation_time": 0.42064690589904785,
+            "best_initialization": "random"
+        }
+    }
+}

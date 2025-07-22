@@ -1,0 +1,206 @@
+{
+    "system_info": {
+        "platform": "macOS-15.5-arm64-arm-64bit",
+        "python_version": "3.11.5",
+        "python_implementation": "CPython",
+        "cpu_count": 8,
+        "date_time": "2025-06-04 15:59:19",
+        "tensorly_version": "0.9.0",
+        "numpy_version": "1.23.5",
+        "torch_version": "2.6.0",
+        "cuda_available": false,
+        "cuda_version": null,
+        "gpu_name": null,
+        "gpu_count": 0
+    },
+    "tensor_info": {
+        "file": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/processed/utrecht/odt_no_same_od_no_rare_od_fixed_thresh/timebin/odt_processed_utrecht_timebin.npz",
+        "shape": [
+            45,
+            45,
+            35
+        ],
+        "non_zero_elements": 3,
+        "density": 4.232804232804233e-05,
+        "min_value": 1.0,
+        "using_sparse": true
+    },
+    "decomposition_params": {
+        "ranks": {
+            "origin": [
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "destination": [
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "time": [
+                2
+            ]
+        },
+        "max_iterations": 1000,
+        "tolerance": 1e-08,
+        "optimizer": "MU",
+        "device": "cpu",
+        "init_methods": "random,svd,nndsvd"
+    },
+    "results": {
+        "(3, 3, 2)": {
+            "normalized_frobenius_error": 0.8895871639251709,
+            "explained_variance": 0.20863467454910278,
+            "computation_time": 0.21280694007873535,
+            "best_initialization": "svd"
+        },
+        "(3, 4, 2)": {
+            "normalized_frobenius_error": 0.8863030672073364,
+            "explained_variance": 0.2144668698310852,
+            "computation_time": 0.3335449695587158,
+            "best_initialization": "svd"
+        },
+        "(3, 5, 2)": {
+            "normalized_frobenius_error": 0.8855597376823425,
+            "explained_variance": 0.215783953666687,
+            "computation_time": 0.3300468921661377,
+            "best_initialization": "random"
+        },
+        "(3, 6, 2)": {
+            "normalized_frobenius_error": 0.8847079277038574,
+            "explained_variance": 0.21729189157485962,
+            "computation_time": 0.7391700744628906,
+            "best_initialization": "svd"
+        },
+        "(3, 7, 2)": {
+            "normalized_frobenius_error": 0.8842803835868835,
+            "explained_variance": 0.21804821491241455,
+            "computation_time": 0.49548792839050293,
+            "best_initialization": "svd"
+        },
+        "(4, 3, 2)": {
+            "normalized_frobenius_error": 0.8828398585319519,
+            "explained_variance": 0.22059381008148193,
+            "computation_time": 0.20842814445495605,
+            "best_initialization": "svd"
+        },
+        "(4, 4, 2)": {
+            "normalized_frobenius_error": 0.8778048753738403,
+            "explained_variance": 0.22945863008499146,
+            "computation_time": 0.21594810485839844,
+            "best_initialization": "svd"
+        },
+        "(4, 5, 2)": {
+            "normalized_frobenius_error": 0.8729038238525391,
+            "explained_variance": 0.23803889751434326,
+            "computation_time": 0.22589111328125,
+            "best_initialization": "svd"
+        },
+        "(4, 6, 2)": {
+            "normalized_frobenius_error": 0.8717315196990967,
+            "explained_variance": 0.24008417129516602,
+            "computation_time": 0.2485949993133545,
+            "best_initialization": "random"
+        },
+        "(4, 7, 2)": {
+            "normalized_frobenius_error": 0.8745978474617004,
+            "explained_variance": 0.2350786328315735,
+            "computation_time": 0.48071789741516113,
+            "best_initialization": "random"
+        },
+        "(5, 3, 2)": {
+            "normalized_frobenius_error": 0.8812009692192078,
+            "explained_variance": 0.22348487377166748,
+            "computation_time": 0.21831893920898438,
+            "best_initialization": "random"
+        },
+        "(5, 4, 2)": {
+            "normalized_frobenius_error": 0.8696268200874329,
+            "explained_variance": 0.24374920129776,
+            "computation_time": 0.44378209114074707,
+            "best_initialization": "svd"
+        },
+        "(5, 5, 2)": {
+            "normalized_frobenius_error": 0.8690698742866516,
+            "explained_variance": 0.244717538356781,
+            "computation_time": 0.336702823638916,
+            "best_initialization": "svd"
+        },
+        "(5, 6, 2)": {
+            "normalized_frobenius_error": 0.8679445385932922,
+            "explained_variance": 0.24667227268218994,
+            "computation_time": 0.4054539203643799,
+            "best_initialization": "random"
+        },
+        "(5, 7, 2)": {
+            "normalized_frobenius_error": 0.863071084022522,
+            "explained_variance": 0.2551082968711853,
+            "computation_time": 0.33670783042907715,
+            "best_initialization": "random"
+        },
+        "(6, 3, 2)": {
+            "normalized_frobenius_error": 0.8807045221328735,
+            "explained_variance": 0.22435957193374634,
+            "computation_time": 0.3503601551055908,
+            "best_initialization": "random"
+        },
+        "(6, 4, 2)": {
+            "normalized_frobenius_error": 0.873100757598877,
+            "explained_variance": 0.23769503831863403,
+            "computation_time": 0.3379180431365967,
+            "best_initialization": "svd"
+        },
+        "(6, 5, 2)": {
+            "normalized_frobenius_error": 0.8612244725227356,
+            "explained_variance": 0.25829243659973145,
+            "computation_time": 0.3637382984161377,
+            "best_initialization": "random"
+        },
+        "(6, 6, 2)": {
+            "normalized_frobenius_error": 0.8629517555236816,
+            "explained_variance": 0.25531429052352905,
+            "computation_time": 0.29115796089172363,
+            "best_initialization": "svd"
+        },
+        "(6, 7, 2)": {
+            "normalized_frobenius_error": 0.8585734963417053,
+            "explained_variance": 0.2628515362739563,
+            "computation_time": 0.6212821006774902,
+            "best_initialization": "svd"
+        },
+        "(7, 3, 2)": {
+            "normalized_frobenius_error": 0.8807597756385803,
+            "explained_variance": 0.22426223754882812,
+            "computation_time": 0.49385690689086914,
+            "best_initialization": "random"
+        },
+        "(7, 4, 2)": {
+            "normalized_frobenius_error": 0.8727912306785583,
+            "explained_variance": 0.2382354736328125,
+            "computation_time": 0.2984161376953125,
+            "best_initialization": "svd"
+        },
+        "(7, 5, 2)": {
+            "normalized_frobenius_error": 0.8604379892349243,
+            "explained_variance": 0.259646475315094,
+            "computation_time": 0.38435912132263184,
+            "best_initialization": "random"
+        },
+        "(7, 6, 2)": {
+            "normalized_frobenius_error": 0.8593040704727173,
+            "explained_variance": 0.2615965008735657,
+            "computation_time": 0.3348212242126465,
+            "best_initialization": "random"
+        },
+        "(7, 7, 2)": {
+            "normalized_frobenius_error": 0.8547315001487732,
+            "explained_variance": 0.26943403482437134,
+            "computation_time": 0.4208641052246094,
+            "best_initialization": "svd"
+        }
+    }
+}

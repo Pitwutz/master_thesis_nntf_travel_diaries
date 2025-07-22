@@ -1,0 +1,74 @@
+{
+  "input_files": {
+    "decomposition": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/results/decompositions/tucker/hourly_analysis/odt_utrecht_hourly_weekend/MU/run_20250610_123349/rank_6_6_2/odt_utrecht_hourly_weekend_factors.npz",
+    "geojson": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/raw/location/working_zips.geojson",
+    "index_mappings": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/processed/utrecht/odt_no_same_od_no_rare_od_fixed_thresh_normalizedPeaks/timehours/index_mappings_utrecht_weekend_hourly.json"
+  },
+  "decomposition_info": {
+    "rank": 6,
+    "weights": [
+      10.963459968566895,
+      6.845269203186035,
+      6.408670902252197,
+      6.095844268798828,
+      4.203444480895996,
+      4.566205024719238
+    ],
+    "origin_mode": {
+      "shape": [
+        44,
+        6
+      ],
+      "min": 0.0,
+      "max": 0.9734946489334106,
+      "mean": 0.05581780523061752,
+      "sparsity": 0.5037878787878788
+    },
+    "destination_mode": {
+      "shape": [
+        44,
+        6
+      ],
+      "min": 0.0,
+      "max": 0.9443401098251343,
+      "mean": 0.05372017249464989,
+      "sparsity": 0.5113636363636364
+    },
+    "temporal_mode": {
+      "shape": [
+        24,
+        2
+      ],
+      "min": 0.0,
+      "max": 0.6381980180740356,
+      "mean": 0.11673178523778915,
+      "sparsity": 0.20833333333333334
+    }
+  },
+  "visualization_info": {
+    "spatial_plot": {
+      "colormap": "viridis",
+      "context_alpha": 0.3,
+      "context_color": "lightgray",
+      "context_edge_color": "gray",
+      "max_components_per_row": 3
+    },
+    "temporal_plot": {
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "line_style": "-o",
+      "grid_alpha": 0.3
+    }
+  },
+  "generation_info": {
+    "timestamp": "2025-06-25T01:05:27.330601",
+    "script_version": "1.0.0"
+  }
+}

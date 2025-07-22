@@ -1,0 +1,27 @@
+# Core Data Science
+pandas==2.0.3
+numpy==1.23.5
+matplotlib==3.7.2
+seaborn==0.12.2
+scikit-learn==1.3.0
+scipy==1.15.2
+
+# GIS Tools
+geopandas==1.0.1
+pyogrio==0.10.0
+pyproj==3.7.1
+shapely==2.0.7
+
+# Development Tools
+jupytext==1.16.7
+openpyxl==3.1.2
+
+# Additional Dependencies
+pillow==11.1.0
+pyyaml==6.0.2
+attrs==25.1.0
+joblib==1.4.2
+threadpoolctl==3.5.0
+tensorly
+torch
+psutil

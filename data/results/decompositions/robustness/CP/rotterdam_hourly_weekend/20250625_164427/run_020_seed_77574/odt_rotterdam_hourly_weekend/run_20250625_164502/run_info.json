@@ -1,0 +1,17 @@
+{
+    "started_at": "2025-06-25 16:45:02",
+    "tensor_name": "odt_processed_rotterdam_hourly_weekend",
+    "ranks": [
+        3
+    ],
+    "tensor_shape": [
+        62,
+        62,
+        24
+    ],
+    "optimizer": "MU",
+    "device": "mps",
+    "random_state": 77574,
+    "status": "completed",
+    "completed_at": "2025-06-25 16:45:05"
+}

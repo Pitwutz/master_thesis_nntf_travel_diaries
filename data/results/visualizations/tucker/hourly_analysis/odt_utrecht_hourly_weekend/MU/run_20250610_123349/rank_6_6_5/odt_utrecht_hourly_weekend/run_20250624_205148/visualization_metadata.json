@@ -1,0 +1,74 @@
+{
+  "input_files": {
+    "decomposition": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/results/decompositions/tucker/hourly_analysis/odt_utrecht_hourly_weekend/MU/run_20250610_123349/rank_6_6_5/odt_utrecht_hourly_weekend_factors.npz",
+    "geojson": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/raw/location/working_zips.geojson",
+    "index_mappings": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/processed/utrecht/odt_no_same_od_no_rare_od_fixed_thresh_normalizedPeaks/timehours/index_mappings_utrecht_weekend_hourly.json"
+  },
+  "decomposition_info": {
+    "rank": 6,
+    "weights": [
+      15.137664794921875,
+      11.046753883361816,
+      9.63882064819336,
+      8.720854759216309,
+      7.925581455230713,
+      4.885220050811768
+    ],
+    "origin_mode": {
+      "shape": [
+        44,
+        6
+      ],
+      "min": 0.0,
+      "max": 0.9834156036376953,
+      "mean": 0.05170152336359024,
+      "sparsity": 0.5378787878787878
+    },
+    "destination_mode": {
+      "shape": [
+        44,
+        6
+      ],
+      "min": 0.0,
+      "max": 0.9534294009208679,
+      "mean": 0.04859865829348564,
+      "sparsity": 0.5303030303030303
+    },
+    "temporal_mode": {
+      "shape": [
+        24,
+        5
+      ],
+      "min": 0.0,
+      "max": 0.9698280692100525,
+      "mean": 0.09277275204658508,
+      "sparsity": 0.375
+    }
+  },
+  "visualization_info": {
+    "spatial_plot": {
+      "colormap": "viridis",
+      "context_alpha": 0.3,
+      "context_color": "lightgray",
+      "context_edge_color": "gray",
+      "max_components_per_row": 3
+    },
+    "temporal_plot": {
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "line_style": "-o",
+      "grid_alpha": 0.3
+    }
+  },
+  "generation_info": {
+    "timestamp": "2025-06-24T20:51:48.949888",
+    "script_version": "1.0.0"
+  }
+}

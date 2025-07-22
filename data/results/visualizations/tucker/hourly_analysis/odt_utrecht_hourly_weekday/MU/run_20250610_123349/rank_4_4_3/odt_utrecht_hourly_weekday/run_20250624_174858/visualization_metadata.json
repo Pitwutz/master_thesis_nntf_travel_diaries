@@ -1,0 +1,72 @@
+{
+  "input_files": {
+    "decomposition": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/results/decompositions/tucker/hourly_analysis/odt_utrecht_hourly_weekday/MU/run_20250610_123349/rank_4_4_3/odt_utrecht_hourly_weekday_factors.npz",
+    "geojson": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/raw/location/working_zips.geojson",
+    "index_mappings": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/processed/utrecht/odt_no_same_od_no_rare_od_fixed_thresh_normalizedPeaks/timehours/index_mappings_utrecht_weekday_hourly.json"
+  },
+  "decomposition_info": {
+    "rank": 4,
+    "weights": [
+      16.173858642578125,
+      17.009706497192383,
+      10.905233383178711,
+      14.619341850280762
+    ],
+    "origin_mode": {
+      "shape": [
+        45,
+        4
+      ],
+      "min": 0.0,
+      "max": 0.8924561738967896,
+      "mean": 0.07055331021547318,
+      "sparsity": 0.36666666666666664
+    },
+    "destination_mode": {
+      "shape": [
+        45,
+        4
+      ],
+      "min": 0.0,
+      "max": 0.8684955835342407,
+      "mean": 0.07110626250505447,
+      "sparsity": 0.37222222222222223
+    },
+    "temporal_mode": {
+      "shape": [
+        24,
+        3
+      ],
+      "min": 0.0,
+      "max": 0.7799069881439209,
+      "mean": 0.13128548860549927,
+      "sparsity": 0.20833333333333334
+    }
+  },
+  "visualization_info": {
+    "spatial_plot": {
+      "colormap": "viridis",
+      "context_alpha": 0.3,
+      "context_color": "lightgray",
+      "context_edge_color": "gray",
+      "max_components_per_row": 3
+    },
+    "temporal_plot": {
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "line_style": "-o",
+      "grid_alpha": 0.3
+    }
+  },
+  "generation_info": {
+    "timestamp": "2025-06-24T17:48:58.793949",
+    "script_version": "1.0.0"
+  }
+}

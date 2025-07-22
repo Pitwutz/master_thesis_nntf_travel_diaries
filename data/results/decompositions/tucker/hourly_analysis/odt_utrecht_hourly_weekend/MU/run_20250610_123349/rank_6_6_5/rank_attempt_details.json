@@ -1,0 +1,23 @@
+{
+    "tensor_name": "odt_utrecht_hourly_weekend",
+    "ranks": [
+        6,
+        6,
+        5
+    ],
+    "ranks_mode": {
+        "origin": 6,
+        "destination": 6,
+        "time": 5
+    },
+    "optimizer": "MU",
+    "max_iter": 1000,
+    "tol": 1e-08,
+    "init_methods": "random,svd,nndsvd",
+    "normalize_factors": true,
+    "exact": false,
+    "algorithm": "fista",
+    "started_at": "2025-06-16 07:39:36",
+    "status": "completed",
+    "completed_at": "2025-06-16 07:39:37"
+}

@@ -1,0 +1,38 @@
+{
+    "normalized_frobenius_error": 0.9545207619667053,
+    "masked_rmse": 0.2130783647298813,
+    "mean_nonzero_value": 1.5989879369735718,
+    "relative_rmse": 0.13325826823711395,
+    "explained_variance": 0.08889013528823853,
+    "computation_time": 0.8753678798675537,
+    "all_factors_non_negative": true,
+    "factor_sparsity": [
+        "0.00%",
+        "0.00%",
+        "0.00%"
+    ],
+    "device": "mps",
+    "best_initialization": "random",
+    "errors_history": [
+        0.960268497467041,
+        0.955282986164093,
+        0.9547631740570068,
+        0.9546116590499878,
+        0.9545562267303467,
+        0.9545347690582275,
+        0.954526424407959,
+        0.954522967338562,
+        0.9545215368270874,
+        0.9545210599899292,
+        0.9545208215713501,
+        0.9545207619667053,
+        0.9545206427574158,
+        0.9545206427574158
+    ],
+    "l1_regularization": 0.0,
+    "l2_regularization": 0.0,
+    "c1_unique_zones": 3,
+    "c2_unique_od_pairs": 4,
+    "c1_c2_approach": "top_n",
+    "c1_c2_top_n": 2
+}

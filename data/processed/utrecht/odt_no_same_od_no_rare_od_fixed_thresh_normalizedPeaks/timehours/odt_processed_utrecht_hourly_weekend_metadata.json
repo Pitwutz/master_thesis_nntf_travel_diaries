@@ -1,0 +1,20 @@
+{
+  "tensor_name": "odt_processed_utrecht_hourly_weekend",
+  "city": "Utrecht",
+  "period": "weekend",
+  "source_file": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/processed/odt_no_same_od_no_rare_od_fixed_thresh.csv",
+  "statistics": {
+    "total_trips": 646,
+    "mean_trips": 1.1494661921708185,
+    "median_trips": 1.0,
+    "density": 0.01209538567493113,
+    "max_trips_per_hour": 5,
+    "min_trips_per_hour": 1,
+    "std_trips": 0.4536342450331082
+  },
+  "dimensions": {
+    "origins": 44,
+    "destinations": 44,
+    "hours": 24
+  }
+}

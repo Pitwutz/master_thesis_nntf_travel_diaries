@@ -1,0 +1,11 @@
+{
+    "run_number": 29,
+    "random_seed": 734781,
+    "timestamp": "2025-06-26 22:30:46",
+    "tensor_path": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/processed/rotterdam/odt_no_same_od_no_rare_od_fixed_thresh_normalizedPeaks/timehours/odt_processed_rotterdam_hourly_weekend.npz",
+    "ranks": [
+        6
+    ],
+    "optimizer": "MU",
+    "status": "completed"
+}

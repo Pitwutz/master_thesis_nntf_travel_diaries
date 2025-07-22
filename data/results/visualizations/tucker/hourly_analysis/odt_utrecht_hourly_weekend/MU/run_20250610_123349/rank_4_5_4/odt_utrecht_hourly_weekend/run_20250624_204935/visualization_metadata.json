@@ -1,0 +1,72 @@
+{
+  "input_files": {
+    "decomposition": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/results/decompositions/tucker/hourly_analysis/odt_utrecht_hourly_weekend/MU/run_20250610_123349/rank_4_5_4/odt_utrecht_hourly_weekend_factors.npz",
+    "geojson": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/raw/location/working_zips.geojson",
+    "index_mappings": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/processed/utrecht/odt_no_same_od_no_rare_od_fixed_thresh_normalizedPeaks/timehours/index_mappings_utrecht_weekend_hourly.json"
+  },
+  "decomposition_info": {
+    "rank": 4,
+    "weights": [
+      14.157482147216797,
+      12.07257080078125,
+      7.377697467803955,
+      5.020763874053955
+    ],
+    "origin_mode": {
+      "shape": [
+        44,
+        4
+      ],
+      "min": 0.0,
+      "max": 0.9670006036758423,
+      "mean": 0.05768541991710663,
+      "sparsity": 0.4318181818181818
+    },
+    "destination_mode": {
+      "shape": [
+        44,
+        5
+      ],
+      "min": 0.0,
+      "max": 0.9496253132820129,
+      "mean": 0.053677331656217575,
+      "sparsity": 0.5
+    },
+    "temporal_mode": {
+      "shape": [
+        24,
+        4
+      ],
+      "min": 0.0,
+      "max": 0.7281898260116577,
+      "mean": 0.10500309616327286,
+      "sparsity": 0.375
+    }
+  },
+  "visualization_info": {
+    "spatial_plot": {
+      "colormap": "viridis",
+      "context_alpha": 0.3,
+      "context_color": "lightgray",
+      "context_edge_color": "gray",
+      "max_components_per_row": 3
+    },
+    "temporal_plot": {
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "line_style": "-o",
+      "grid_alpha": 0.3
+    }
+  },
+  "generation_info": {
+    "timestamp": "2025-06-24T20:49:35.082334",
+    "script_version": "1.0.0"
+  }
+}

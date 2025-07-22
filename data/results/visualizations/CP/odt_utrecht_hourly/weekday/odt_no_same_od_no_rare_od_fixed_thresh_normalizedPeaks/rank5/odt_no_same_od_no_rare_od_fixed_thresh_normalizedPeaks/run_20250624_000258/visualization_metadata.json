@@ -1,0 +1,73 @@
+{
+  "input_files": {
+    "decomposition": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/results/decompositions/CP/final/peak hours normalized/utrecht/odt_no_same_od_no_rare_od_fixed_thresh_normalizedPeaks/odt_utrecht_hourly_weekday/run_20250610_001409/rank_5/odt_processed_utrecht_hourly_weekday_factors.npz",
+    "geojson": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/raw/location/working_zips.geojson",
+    "index_mappings": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/processed/utrecht/odt_no_same_od_no_rare_od_fixed_thresh_normalizedPeaks/timehours/index_mappings_utrecht_weekday_hourly.json"
+  },
+  "decomposition_info": {
+    "rank": 5,
+    "weights": [
+      13.141630172729492,
+      15.317371368408203,
+      10.013459205627441,
+      11.703414916992188,
+      10.367584228515625
+    ],
+    "origin_mode": {
+      "shape": [
+        45,
+        5
+      ],
+      "min": 0.0,
+      "max": 0.9126423001289368,
+      "mean": 0.06984437257051468,
+      "sparsity": 0.3022222222222222
+    },
+    "destination_mode": {
+      "shape": [
+        45,
+        5
+      ],
+      "min": 0.0,
+      "max": 0.9162307977676392,
+      "mean": 0.06748078763484955,
+      "sparsity": 0.30666666666666664
+    },
+    "temporal_mode": {
+      "shape": [
+        24,
+        5
+      ],
+      "min": 0.0,
+      "max": 0.789787769317627,
+      "mean": 0.13221031427383423,
+      "sparsity": 0.14166666666666666
+    }
+  },
+  "visualization_info": {
+    "spatial_plot": {
+      "colormap": "viridis",
+      "context_alpha": 0.3,
+      "context_color": "lightgray",
+      "context_edge_color": "gray",
+      "max_components_per_row": 3
+    },
+    "temporal_plot": {
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "line_style": "-o",
+      "grid_alpha": 0.3
+    }
+  },
+  "generation_info": {
+    "timestamp": "2025-06-24T00:02:58.684429",
+    "script_version": "1.0.0"
+  }
+}

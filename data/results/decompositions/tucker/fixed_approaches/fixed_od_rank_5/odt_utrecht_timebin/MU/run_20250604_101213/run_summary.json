@@ -1,0 +1,96 @@
+{
+    "system_info": {
+        "platform": "macOS-15.5-arm64-arm-64bit",
+        "python_version": "3.11.5",
+        "python_implementation": "CPython",
+        "cpu_count": 8,
+        "date_time": "2025-06-04 10:12:26",
+        "tensorly_version": "0.9.0",
+        "numpy_version": "1.23.5",
+        "torch_version": "2.6.0",
+        "cuda_available": false,
+        "cuda_version": null,
+        "gpu_name": null,
+        "gpu_count": 0
+    },
+    "tensor_info": {
+        "file": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/processed/utrecht/odt_no_same_od_no_rare_od_fixed_thresh/timebin/odt_processed_utrecht_timebin.npz",
+        "shape": [
+            45,
+            45,
+            35
+        ],
+        "non_zero_elements": 3,
+        "density": 4.232804232804233e-05,
+        "min_value": 1.0,
+        "using_sparse": true
+    },
+    "decomposition_params": {
+        "ranks": {
+            "origin": [
+                5
+            ],
+            "destination": [
+                5
+            ],
+            "time": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        "max_iterations": 1000,
+        "tolerance": 1e-08,
+        "optimizer": "MU",
+        "device": "cpu",
+        "init_methods": "random,svd,nndsvd"
+    },
+    "results": {
+        "(5, 5, 2)": {
+            "normalized_frobenius_error": 0.8649181127548218,
+            "explained_variance": 0.25191664695739746,
+            "computation_time": 0.34282684326171875,
+            "best_initialization": "random"
+        },
+        "(5, 5, 3)": {
+            "normalized_frobenius_error": 0.8638584017753601,
+            "explained_variance": 0.25374865531921387,
+            "computation_time": 0.5063560009002686,
+            "best_initialization": "svd"
+        },
+        "(5, 5, 4)": {
+            "normalized_frobenius_error": 0.8635863661766052,
+            "explained_variance": 0.25421857833862305,
+            "computation_time": 0.3789670467376709,
+            "best_initialization": "svd"
+        },
+        "(5, 5, 5)": {
+            "normalized_frobenius_error": 0.8575370907783508,
+            "explained_variance": 0.26463013887405396,
+            "computation_time": 1.1172311305999756,
+            "best_initialization": "svd"
+        },
+        "(5, 5, 6)": {
+            "normalized_frobenius_error": 0.8593334555625916,
+            "explained_variance": 0.2615460157394409,
+            "computation_time": 0.8538801670074463,
+            "best_initialization": "random"
+        },
+        "(5, 5, 7)": {
+            "normalized_frobenius_error": 0.8514996767044067,
+            "explained_variance": 0.2749482989311218,
+            "computation_time": 1.1708290576934814,
+            "best_initialization": "random"
+        },
+        "(5, 5, 8)": {
+            "normalized_frobenius_error": 0.8556454181671143,
+            "explained_variance": 0.2678709030151367,
+            "computation_time": 0.5040528774261475,
+            "best_initialization": "svd"
+        }
+    }
+}

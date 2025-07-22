@@ -1,0 +1,71 @@
+{
+  "input_files": {
+    "decomposition": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/results/decompositions/CP/final/peak hours normalized/rotterdam/odt_no_same_od_no_rare_od_fixed_thresh_normalizedPeaks/odt_rotterdam_hourly_weekday/run_20250610_001727/rank_3/odt_processed_rotterdam_hourly_weekday_factors.npz",
+    "geojson": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/raw/location/working_zips.geojson",
+    "index_mappings": "/Users/peterfalterbaum/Documents/Nova/thesis local/implementation/rocket riding/data/processed/rotterdam/odt_no_same_od_no_rare_od_fixed_thresh_normalizedPeaks/timehours/index_mappings_rotterdam_weekday_hourly.json"
+  },
+  "decomposition_info": {
+    "rank": 3,
+    "weights": [
+      18.861766815185547,
+      13.678023338317871,
+      18.876615524291992
+    ],
+    "origin_mode": {
+      "shape": [
+        69,
+        3
+      ],
+      "min": 0.0,
+      "max": 0.8252379894256592,
+      "mean": 0.046552713960409164,
+      "sparsity": 0.18357487922705315
+    },
+    "destination_mode": {
+      "shape": [
+        69,
+        3
+      ],
+      "min": 0.0,
+      "max": 0.9091024398803711,
+      "mean": 0.04563196003437042,
+      "sparsity": 0.2318840579710145
+    },
+    "temporal_mode": {
+      "shape": [
+        24,
+        3
+      ],
+      "min": 0.0,
+      "max": 0.8895737528800964,
+      "mean": 0.12624073028564453,
+      "sparsity": 0.08333333333333333
+    }
+  },
+  "visualization_info": {
+    "spatial_plot": {
+      "colormap": "viridis",
+      "context_alpha": 0.3,
+      "context_color": "lightgray",
+      "context_edge_color": "gray",
+      "max_components_per_row": 3
+    },
+    "temporal_plot": {
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "line_style": "-o",
+      "grid_alpha": 0.3
+    }
+  },
+  "generation_info": {
+    "timestamp": "2025-06-14T10:40:35.738421",
+    "script_version": "1.0.0"
+  }
+}
