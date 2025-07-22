@@ -213,17 +213,3 @@ Decomposition results are saved in timestamped directories containing:
 
 - All scripts and notebooks use a central config.py and environment variable (PROJECT_ROOT) for robust, portable path management.
 - See config.py for details on setting up your environment.
-
-## Contributing
-
-This is a research project for a master thesis. For questions or collaboration, please contact the author.
-
-## License
-
-[Add license information here]
-
-## Acknowledgments
-
-- ODiN survey data provided by [source]
-- Tensor decomposition algorithms based on [references]
-- Research conducted as part of [institution] master thesis
